@@ -1,0 +1,100 @@
+:root{
+    --primary-color: #9fcbe8;
+    --secondary-color: #f253c5;
+    --font-size: 18px; 
+}
+boby {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+
+/* All header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: black;
+}
+
+/* All Nav */
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li{
+    margin: 0 15px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+/* Dlink section */
+.dlink {
+    background: url('/resources/images/Amaka\ 2.jpg.jpg') no-repeat 
+    center center/cover; 
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.dlink h1{
+    font-size: calc(2rem + 1rem);
+    color: white;
+}
+.dlink p{
+    font-size: calc(1rem + 0.6rem);
+    color: white;
+}
+
+/* Product Design Section */
+h1 {
+    text-align: center;
+}
+p {
+    font-size: 20px;
+}
+.pdp {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2px;
+  padding: 10px;
+  font-size: 20px;
+}
+.prd {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 20px;
+}
+
+/* Frontend on product page */
+.front-p {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2px;
+  padding: 10px;
+  font-size: 20px;
+}
+.pd {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 20px;  
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;   
+}
+.about img {
+    width: 40%;
+}
+    
