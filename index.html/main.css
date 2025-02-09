@@ -95,6 +95,88 @@ p {
     gap: 20px;   
 }
 .about img {
-    width: 40%;
+    width: 20%;
 }
-    
+
+/* All Gallery */
+.uiux-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+.fe-gallery h2 {
+    text-align: center;
+}
+.fe-gallery img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+.frontend-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 30px;  
+}
+.fed-gallery img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover; 
+}
+
+/* Form Section  */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input, textarea {
+    width: 60%;
+    padding: 10px;
+    margin: 5px;
+}
+form button {
+    padding: 8px;
+    width: 16%;
+    background-color: aqua;
+}
+.logo {
+    display: block;
+}
+
+/* Footer Section */
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-links img {
+    width: 5%;
+    height: 5%;
+    padding: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+   body {padding: 10px;}
+    .about { flex-direction: column;}
+}
+.uiux-container {display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 10px;}
+.frontend-container { display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 10px;}
+.logo {display: none;}
+header {padding: 5px;}
+button {width: 20%; padding: 4px; font-size: small;}
+
+    @media(max-width: 1020px) {
+        .uiux-container {grid-template-columns: 1fr 1fr;}
+    }
