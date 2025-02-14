@@ -11,6 +11,7 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
     color: #080908;
+    text-align: justify;
 }
 
 /* logo */
@@ -183,7 +184,7 @@ form button {
 
 /* Footer Section */
 footer {
-    background-color: black;
+    background-color: rgb(5, 68, 240);
     color: white;
     padding: 10px;
     display: flex;
@@ -193,7 +194,7 @@ footer {
 .social-links img {
     width: 10%;
     height: 10%;
-    padding: 20px;
+    padding: 10px;
 }
 
 /* Media Queries */
@@ -220,7 +221,7 @@ footer {
         width: 70%;
     }
     footer p {
-      font-size: 10px;
+      font-size: 20px;
     }
     button {
         width: 10%; 
