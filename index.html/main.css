@@ -11,7 +11,7 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
     color: #080908;
-    text-align: justify;
+    text-align: left;
 }
 
 /* logo */
@@ -109,7 +109,7 @@ p {
 }
 .fe-gallery img {
     width: 100%;
-    height: 70vh auto;
+    height: 90vh auto;
     object-fit: cover;
     padding: 20px;
 }
