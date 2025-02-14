@@ -1,26 +1,24 @@
+/* variance */
 :root{
     --primary-color: #9fcbe8;
     --secondary-color: #f253c5;
     --font-size: 18px; 
+    --text-color: #080908;
 }
-boby {
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: grey;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color: #080908;
 }
 
-/* All header styling */
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    align-items: center;
-    background-color: var(--primary-color);
-    color: black;
+/* logo */
+.logo {
+    display: block;
 }
 
-/* All Nav */
+/* Nav */
 nav ul{
     list-style: none;
     display: flex;
@@ -33,9 +31,19 @@ nav ul li a{
     text-decoration: none;
 }
 
-/* Dlink section */
-.dlink {
-    background: url('../resources/images/Amaka\ 1.jpg.jpg') no-repeat 
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: black;
+}
+
+/* Hero section */
+.hero {
+    background: url('../resources/images/Amaka\ 3.jpg.jpg') no-repeat 
     center center/cover; 
     height: 80vh;
     display: flex;
@@ -44,18 +52,40 @@ nav ul li a{
     align-items: center;
     color: white;
 }
-.dlink h1{
-    font-size: calc(2rem + 1rem);
-    color: white;
+.hero h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #72f3d5;
 }
-.dlink p{
-    font-size: calc(1rem + 0.6rem);
-    color: white;
+.hero p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #72f3d5;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;   
+}
+.about-text h2 {
+    color: #f80bb5;
+    font-size: 30px;
+    font-weight: 100;
+}
+.about-text p {
+    font-size: 26px;
+}
+.about img {
+    width: 40%;
 }
 
 /* Product Design Section */
 h1 {
     text-align: center;
+    font-size: 40px;
 }
 p {
     font-size: 20px;
@@ -63,9 +93,37 @@ p {
 .pdp {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2px;
+  gap: 30px;
   padding: 10px;
   font-size: 20px;
+}
+/* All Gallery */
+.uiux-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+.fe-gallery img {
+    width: 100%;
+    height: 70vh auto;
+    object-fit: cover;
+    padding: 20px;
+}
+.fe-gallery h2 {
+    text-align: center;
+    font-size: 30px;
+}
+.fe-gallery p {
+    font-size: 20px;
+}
+
+.prd p {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
 }
 .prd {
   background-color: var(--secondary-color);
@@ -77,47 +135,16 @@ p {
 .front-p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2px;
-  padding: 10px;
-  font-size: 20px;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
 }
 .pd {
     background-color: var(--secondary-color);
     color: white;
     padding: 20px;  
 }
-
-/* About Section */
-.about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;   
-}
-.about img {
-    width: 40%;
-}
-
-/* All Gallery */
-.uiux-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    padding: 30px;
-    width: 70%;
-    object-fit: cover;
-}
-.fe-gallery img {
-    width: 100%;
-    height: 90%;
-    object-fit: cover;
-    padding: 10px;
-}
-
-.fe-gallery h2 {
-    text-align: center;
-}
-
 .frontend-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -128,8 +155,7 @@ p {
     width: 80%;
     height: 70vh auto;
     object-fit: cover; 
-    padding: 20px;
-     
+    padding: 20px;    
 }
 
 /* Form Section  */
@@ -148,8 +174,11 @@ form button {
     width: 16%;
     background-color: aqua;
 }
-.logo {
-    display: block;
+
+.button {
+    width: 16%; 
+    padding: 8px; 
+    background-color: aqua;
 }
 
 /* Footer Section */
@@ -162,9 +191,9 @@ footer {
     align-items: center;
 }
 .social-links img {
-    width: 5%;
-    height: 5%;
-    padding: 30px;
+    width: 10%;
+    height: 10%;
+    padding: 20px;
 }
 
 /* Media Queries */
@@ -172,11 +201,20 @@ footer {
     .logo {
         display: none;
     }
-    header {
-        padding: 5px;
+    body {
+        padding: 10px;
     }
-    .uiux-container{
-      flex-direction: column;  
+    nav ul li{
+        margin: 0 10px;
+    }
+    header {
+        padding: 10px;
+    }
+    hero h1{
+        font-size: 30px
+    }
+    .hero p{
+        font-size: 24px;
     }
     .fe-gallery img {
         width: 70%;
