@@ -124,7 +124,6 @@ p {
 .prd p {
     font-size: 24px;
     font-weight: 500;
-    text-align: center;
 }
 .prd {
   background-color: var(--secondary-color);
