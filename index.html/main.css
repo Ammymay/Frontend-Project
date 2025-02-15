@@ -234,7 +234,7 @@ footer p {
         width: 90%;
     }
     footer p {
-      font-size: 26px;
+      font-size: 22px;
     }
     button {
         width: 30%; 
@@ -242,8 +242,8 @@ footer p {
         margin: 4px;    
     }
     .social-links img {
-        width: 20%;
-        height: 15%;
+        width: 30%;
+        height: 25%;
         padding: 25px;
     }
 }
