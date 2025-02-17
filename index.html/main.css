@@ -83,7 +83,8 @@ header {
     text-align: justify;
 }
 .about img {
-    width: 40%;
+    width: 20%;
+    position: static;
 }
 
 /* Product Design Section */
@@ -194,17 +195,17 @@ form label {
 /* Footer Section */
 footer {
     background-color: var(--primary-color);
-    padding: 10px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
 }
 .social-links img {
-    width: 15%;
-    height: 10%;
+    width: 105px;
+    height: 105px;
     padding: 20px;
 }
-footer p {
+footer h4 {
     font-size: 24px;
 }
 
@@ -233,7 +234,7 @@ footer p {
         grid-template-columns: auto;
         width: 90%;
     }
-    footer p {
+    footer h4 {
       font-size: 22px;
     }
     button {
@@ -242,9 +243,9 @@ footer p {
         margin: 4px;    
     }
     .social-links img {
-        width: 30%;
-        height: 25%;
-        padding: 25px;
+        width: 22%;
+        height: 18%;
+        padding: 2px;
     }
 }
 
