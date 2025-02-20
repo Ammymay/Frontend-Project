@@ -1,129 +1,123 @@
 /* variance */
-:root{
-    --primary-color: #e7eff9;
-    --secondary-color: #e34bb8;
-    --font-size: 18px; 
-    --text-color: #080908;
-}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
-    color: #080908;
-    text-align: left;
-}
-
-/* logo */
-.logo {
-    display: block;
-}
-
-/* Nav */
-nav ul{
-    list-style: none;
-    display: flex;
-}
-nav ul li{
-    margin: 0 15px;
-}
-nav ul li a{
-    color: rgb(11, 11, 11);
-    text-decoration: none;
-    font-size: 24px;
-}
-
-/* Header styling */
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    align-items: center;
-    background-color: var(--primary-color);
-    color: black;
-}
-
-/* Hero section */
-.hero {
-    background: url('../resources/images/Amaka\ 3.jpg.jpg') no-repeat 
-    center center/cover; 
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}   
+body {
+    background: #080808;
     color: white;
 }
-.hero h1 {
-    font-size: 40px;
-    font-weight: 800;
-    color: #f2f4f3;
-    padding-top: 400px;
+#header {
+    width: 100%;
+    height: 100v;
+    background-size: cover;
+    background-position: center;
 }
-.hero p {
-    font-size: 24px;
-    font-weight: 600;
-    color: #eff5f3;
+.container {
+    padding: 10px 10%;
+}
+/* Nav */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.header-text {
+    margin-top: 10%;
+    font-size: 30px;
+    position: relative;
+}
+.header-text h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    padding-left: 380px;
+}
+.header-text p {
+    margin-top: 6%;
+    padding-left: 300px;
 }
 
 /* About Section */
-.about {
+#about {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;   
+    color: #fff; 
 }
-.about-text h2 {
-    font-size: 26px;
-    font-weight: 200;
-    text-align: center;
+.sub-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
 }
-.about-text p {
+.amaka-text p{
     font-size: 20px;
-    text-align: justify;
-}
-.about img {
-    width: 20%;
-    position: static;
 }
 
 /* Product Design Section */
-h1 {
-    text-align: center;
-    font-size: 32px;
+#project {
+    padding: 80px 0;
+    color: #fff;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.designer {
+    flex-basis: 45%;
+    display: flex;
+    margin: 20px 0 40px; 
+}
+.developer {
+    flex-basis: 40%;
+    display: flex;
+    margin: 20px 0 40px; 
 }
 h2 {
     text-align: center;
     font-size: 26px;
 }
-.project p {
-    font-size: 20px;
-}
-.pdp {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
-  padding: 10px;
-  font-size: 20px;
-}
 p {
     font-size: 20px;
 }
+.pdp {
+  margin-right: 50px;
+  font-weight: 300;
+  padding: 10px;
+  font-size: 18px;
+  position: relative;
+}
+.pd {
+    margin-right: 50px;
+    font-weight: 300;
+    padding: 10px;
+    font-size: 18px;
+    position: relative;    
+}
 
-/* All Gallery */
+
+/* Services/ My work*/
 .uiux-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 6px;
+    padding: 20px;
 }
 .fe-gallery img {
     width: 100%;
-    height: 90vh auto;
+    height: 100vh auto;
     object-fit: cover;
-    padding: 20px;
 }
 .fe-gallery h2 {
     text-align: center;
@@ -164,8 +158,8 @@ p {
     padding: 30px;  
 }
 .fed-gallery img {
-    width: 80%;
-    height: 70vh auto;
+    width: 100%;
+    height: 90vh auto;
     object-fit: cover; 
     padding: 20px;    
 }
@@ -223,10 +217,12 @@ footer h4 {
     header {
         padding: 10px;
     }
-    hero h1{
-        font-size: 30px
-    }
-    .hero p{
+    .header-text h1, {
+        font-size: 20px;
+        margin-top: 10px;
+        padding-left: 100px;
+    } 
+    .header-text p{
         display: none;
     }
     .fe-gallery img {
