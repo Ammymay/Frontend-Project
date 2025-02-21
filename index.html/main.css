@@ -1,29 +1,30 @@
-/* variance */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
-}   
+}
 body {
     background: #080808;
-    color: white;
+    color: #fff;
 }
+/* --------------Header/Nav Section------------ */
 #header {
     width: 100%;
     height: 100v;
-    background-size: cover;
-    background-position: center;
+}
+#header img {
+ padding-left: 40%; 
+ position: absolute;  
 }
 .container {
     padding: 10px 10%;
 }
-/* Nav */
 nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around
 }
 nav ul li {
     display: inline-block;
@@ -35,135 +36,81 @@ nav ul li a {
     text-decoration: none;
     font-size: 20px;
 }
+.logo {
+    width: 140px;
+    font-size: 20px;
+}
 .header-text {
     margin-top: 10%;
-    font-size: 30px;
+    font-size: 20px;
     position: relative;
 }
 .header-text h1 {
     font-size: 40px;
     margin-top: 10px;
-    padding-left: 380px;
 }
-.header-text p {
-    margin-top: 6%;
-    padding-left: 300px;
+.header-text h1 span {
+    color: rgb(103, 212, 231);
 }
-
-/* About Section */
-#about {
-    display: flex;
-    color: #fff; 
-}
-.sub-title {
-    font-size: 30px;
-    font-weight: 600;
-    color: #fff;
-}
+/* ---------------About Section---------------------- */
 .amaka-text p{
-    font-size: 20px;
+    font-size: 18px;
 }
-
-/* Product Design Section */
-#project {
-    padding: 80px 0;
-    color: #fff;
-}
+/* -----------------Services/Projects Section---------- */
 .row {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .designer {
-    flex-basis: 45%;
-    display: flex;
-    margin: 20px 0 40px; 
+    flex-basis: 40%;  
 }
 .developer {
     flex-basis: 40%;
-    display: flex;
-    margin: 20px 0 40px; 
 }
-h2 {
-    text-align: center;
-    font-size: 26px;
-}
-p {
-    font-size: 20px;
-}
-.pdp {
-  margin-right: 50px;
-  font-weight: 300;
-  padding: 10px;
-  font-size: 18px;
-  position: relative;
-}
-.pd {
-    margin-right: 50px;
-    font-weight: 300;
-    padding: 10px;
-    font-size: 18px;
-    position: relative;    
-}
-
-
-/* Services/ My work*/
-.uiux-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-.fe-gallery img {
-    width: 100%;
-    height: 100vh auto;
-    object-fit: cover;
-}
-.fe-gallery h2 {
-    text-align: center;
-    font-size: 26px;
-}
-.fe-gallery p {
-    font-size: 20px;
-}
-
 .prd p {
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 20px;
 }
-.prd {
-  background-color: var(--secondary-color);
-  color: white;
-  padding: 20px;
+.pd p {
+    font-size: 20px;
 }
-
-/* Frontend on product page */
-.front-p {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
+.uiux h2 {
+    text-align: center;
+    font-size: 30px;
 }
-.pd {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 20px;  
+.uiux p {
+    font-size: 20px;
 }
-.frontend-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    padding: 30px;  
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
 }
-.fed-gallery img {
+.card {
+    width: 320px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #383737;
+    box-shadow: 0px 2px 4px rgba(0,0,0,2);
+    margin: 20px;
+}
+.card img {
     width: 100%;
-    height: 90vh auto;
-    object-fit: cover; 
-    padding: 20px;    
+    height: auto;
 }
-
+.card-content {
+    padding: 16px;
+}
+.card-content h2 {
+    font-size: 28px;
+    margin-top: 8px;
+}
+.card-content p{
+    color: #aba5a5;
+    font-size: 16px;
+    line-height: 1.2;
+}
 /* Form Section  */
 form {
     display: flex;
@@ -205,33 +152,11 @@ footer h4 {
 
 /* Media Queries */
 @media ( max-width: 600px) {
-    .logo {
-        display: none;
-    }
-    body {
-        padding: 10px;
-    }
-    nav ul li{
-        margin: 0 10px;
-    }
-    header {
-        padding: 10px;
-    }
-    .header-text h1, {
-        font-size: 20px;
-        margin-top: 10px;
-        padding-left: 100px;
-    } 
-    .header-text p{
-        display: none;
-    }
-    .fe-gallery img {
-        display: grid;
-        grid-template-columns: auto;
-        width: 90%;
-    }
     footer h4 {
       font-size: 22px;
+    }
+    .logo {
+        display: none;
     }
     button {
         width: 30%; 
@@ -244,10 +169,3 @@ footer h4 {
         padding: 2px;
     }
 }
-
-@media (max-width: 1020px) {
-    .uiux-container {
-        grid-template-columns: (1fr 1fr);
-    }
-}
-   
