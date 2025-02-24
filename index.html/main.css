@@ -55,7 +55,6 @@ nav ul li a {
 /* ---------------About Section---------------------- */
 .amaka-text p{
     font-size: 18px;
-    align-content: center;
 }
 /* -----------------Services/Projects Section---------- */
 .row {
@@ -172,16 +171,16 @@ footer h4 {
         width: 300px; 
        }
     .container {
-        padding: 10px 10%;
+        padding: 5px 5%;
     }
     h1 {
         font-size: 20px;
     }
+    input, textarea {
+        background-color: #bfdcf5;
+    }
     footer h4 {
       font-size: 16px;
-    }
-    .logo {
-        display: none;
     }
     button {
         width: 30%; 
