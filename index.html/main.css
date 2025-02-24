@@ -6,12 +6,12 @@
 }
 body {
     background: #080808;
-    color: #fff;
+    color: #f5f0f0;
 }
 /* --------------Header/Nav Section------------ */
 #header {
     width: 100%;
-    height: 100v;
+    height: 100vh;
 }
 #header img {
  padding-left: 40%; 
@@ -55,12 +55,16 @@ nav ul li a {
 /* ---------------About Section---------------------- */
 .amaka-text p{
     font-size: 18px;
+    align-content: center;
 }
 /* -----------------Services/Projects Section---------- */
 .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+h1 {
+    font-size: 24px;
 }
 .designer {
     flex-basis: 40%;  
@@ -147,13 +151,34 @@ footer {
     padding: 20px;
 }
 footer h4 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 /* Media Queries */
 @media ( max-width: 600px) {
+    .logo {
+        display: none;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    #header {
+        width: 100%;
+        height: 60vh;
+    }
+    #header img {
+        padding-left: 40%; 
+        position: absolute; 
+        width: 300px; 
+       }
+    .container {
+        padding: 10px 10%;
+    }
+    h1 {
+        font-size: 20px;
+    }
     footer h4 {
-      font-size: 22px;
+      font-size: 16px;
     }
     .logo {
         display: none;
