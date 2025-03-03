@@ -82,7 +82,7 @@ nav ul li a {
 }
 /* -----------------Services/Projects Section---------- */
 #project {
-    margin-top: 200px;
+    margin-top: 250px;
 }
 #project h1 {
     text-align: center;
@@ -200,7 +200,8 @@ footer h4 {
         display: none;
     }
     nav ul li a {
-        font-size: 14px;
+        font-size: 20px;
+        font-weight: 600;
     }
     #header {
         width: 100%;
@@ -229,6 +230,20 @@ footer h4 {
     #about {
         margin-top: 2px;
         margin-right: 2px;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .designer {
+        flex-basis: 50%;
+        font-size: 14px;  
+    }
+    .developer {
+        flex-basis: 50%;
+        font-size: 14px;
     }
     .uiux p {
         text-align: justify;
