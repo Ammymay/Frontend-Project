@@ -233,6 +233,7 @@ footer h4 {
     }
     .about-img img {
         display: block;
+        width: 80%;
     }
     .container {
         padding: 10px 10%;
@@ -246,7 +247,7 @@ footer h4 {
         text-align: justify;
     }
     #about {
-        margin-top: 2px;
+        margin-top: 6px;
         margin-right: 2px;
     }
     #project {
@@ -289,6 +290,6 @@ footer h4 {
         width: 20%;
         height: 15%;
         padding: 10px;
-        margin-left: 3.6%;
+        margin-left: 3%;
     }
 }
