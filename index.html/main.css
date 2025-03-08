@@ -214,18 +214,18 @@ footer h4 {
     }
     #header {
         width: 100%;
-        height: 30vh;
+        height: 10.5vh;
     }
     .header-text h1 {
-        font-size: 24px;
+        font-size: 26px;
         margin-top: 10px;
     }
     .header-text h3 {
-        font-size: 20px;
+        font-size: 22px;
         margin-top: 20%;
     }
     .header-text p {
-        font-size: 18px;
+        font-size: 20px;
         text-align: justify;
     }
     .header_img {
@@ -236,10 +236,10 @@ footer h4 {
         width: 80%;
     }
     .container {
-        padding: 8px 8%
+        padding: 6px 2%;
     }
     h1 {
-        font-size: 20px;
+        font-size: 22px;
     }
     .amaka-text p {
         text-align: justify;
@@ -275,7 +275,7 @@ footer h4 {
         background-color: #f2f4f6;
     }
     footer h4 {
-      font-size: 12px;
+      font-size: 9px;
       text-align: center;
     }
     button {
